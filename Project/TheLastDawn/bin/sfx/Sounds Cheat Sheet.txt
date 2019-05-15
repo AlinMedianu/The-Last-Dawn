@@ -1,0 +1,11 @@
+Sonniss.com GDC Bundles
+bell_10_b.wav - useful for when boost is ready again
+Negative_Notification_25 - for when boost use is attempted with no fuel
+Low Hum - base engine sound
+User Interface Shut Down 01 - potential leave game sound?
+explosion_med_long_tail_01 - good death sound
+Spaceship Interface 33 - possible latching into orbit sound
+SF_sdb_WHOOSH_15_space_vehicle - orbiting sound
+
+
+https://freesound.org/people/juancamiloorjuela/sounds/204319/ - fuel pickup sound

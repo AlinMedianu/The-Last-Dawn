@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="VFX">
+      <UniqueIdentifier>{29c93b7f-16d5-4d6d-b682-f9268d9335df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{d4bc8161-6275-4f66-9ac4-a99efba7c726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{85195457-b389-4af7-a856-50903faba3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modes">
+      <UniqueIdentifier>{f8b402fe-f49e-4ad0-9f8d-17096b8be949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle System">
+      <UniqueIdentifier>{fed8754c-ed31-46c5-9102-a0a9df391101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle System\Header Files">
+      <UniqueIdentifier>{5f4d05d1-9087-404c-81be-d340c2673cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle System\Source Files">
+      <UniqueIdentifier>{27eef015-2b05-4a79-9eaa-29cc36275b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Header Files">
+      <UniqueIdentifier>{c0fc2d3c-5f3b-4be9-a69d-18af959a00cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Source Files">
+      <UniqueIdentifier>{e366940c-759a-4f94-9da2-bcdb15f5d51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Header Files">
+      <UniqueIdentifier>{a3e06c53-4fb0-4958-98cd-0f663f7592dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Source Files">
+      <UniqueIdentifier>{b0a22d1c-46db-4329-aa1f-434d09afe431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modes\Header Files">
+      <UniqueIdentifier>{1a0486ce-e1c5-4060-a8cb-bb48ff1cb03c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modes\Source Files">
+      <UniqueIdentifier>{1d7302cf-5404-48ba-ba18-6b5208790e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Management">
+      <UniqueIdentifier>{6ab7281b-4654-45d9-b2cb-112ffd7b4c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Management\Header Files">
+      <UniqueIdentifier>{08aa20af-1619-4d1a-8d15-3a318aeb25c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Management\Source Files">
+      <UniqueIdentifier>{94c89ac7-892a-43bb-bc69-79b5406b1965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{b201ffe8-f14f-4c8a-8768-3518e72c6938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Header Files">
+      <UniqueIdentifier>{3696432c-0f28-4c32-9dcc-4e7badac727b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Source Files">
+      <UniqueIdentifier>{bb0a6574-ab3f-45e3-9337-190100d84f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{09dab32a-4aea-4eb4-a4ef-3de05bcaec4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{204ec538-e247-4d24-b7b1-035a2b46b980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Header Files">
+      <UniqueIdentifier>{2724f3ca-88fb-4d9e-9bc3-79d4ded92648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Source Files">
+      <UniqueIdentifier>{6943dacd-7876-474f-9ad0-bc18400dc2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Header Files">
+      <UniqueIdentifier>{3609adf5-dc53-46ff-ac17-173f4323023a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Source Files">
+      <UniqueIdentifier>{f6d68772-59f4-49b2-9062-74d7243e5766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Header Files">
+      <UniqueIdentifier>{783c20c3-662d-4bdb-a16a-f40d6d051af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders">
+      <UniqueIdentifier>{0d43c230-7f26-4420-9791-cf2e81ca3d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Source Files">
+      <UniqueIdentifier>{7d8ebb80-02bb-4aea-961d-ea3d99c9233e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders\Utilities">
+      <UniqueIdentifier>{3494f1cc-574e-4da8-baa2-46bfa06e2a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders\Pixel">
+      <UniqueIdentifier>{6832c8ed-a487-4727-a9fa-89a1b405db26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders\Vertex">
+      <UniqueIdentifier>{292cc050-b82c-4ece-8f90-bad050809068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders\Hull">
+      <UniqueIdentifier>{590c47ac-fbac-46dd-9662-0a90cc3e139a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VFX\Shaders\Domain">
+      <UniqueIdentifier>{968080c6-44b1-479f-bd04-6ff40dcda920}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Emitter.cpp">
+      <Filter>Particle System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Particle System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSys.cpp">
+      <Filter>Particle System\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioMgr.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioMgrFMOD.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModeAudio.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipAudio.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HighScoreUI.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameEntryUI.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\GameMode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\GameOverMode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\HighScoreMode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\Mode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\ModeManager.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\NameEntryMode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cipher.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HighScoreManager.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ISerializable.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadSaveManager.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameEntryModeAudio.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Modes\TitleMode.cpp">
+      <Filter>Modes\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleModeAudio.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IModeAudio.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilsDefines.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowUtils.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DUtil.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Data Management\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBuilder.cpp">
+      <Filter>Models\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Models\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Utilities\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameModel.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MobileBody.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Planet.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShip.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sun.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollingImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FuelBuff.cpp">
+      <Filter>GameObjects\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Emitter.h">
+      <Filter>Particle System\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Particle System\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSys.h">
+      <Filter>Particle System\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMgr.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMgrFMOD.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModeAudio.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipAudio.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HighScoreUI.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NameEntryUI.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\GameMode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\GameOverMode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\HighScoreMode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\Mode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\ModeManager.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\NameEntryMode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Modes\TitleMode.h">
+      <Filter>Modes\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cipher.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HighScoreManager.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ISerializable.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadSaveManager.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NameEntryModeAudio.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleModeAudio.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IAudioGroup.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IModeAudio.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Data Management\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DUtil.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilsDefines.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowUtils.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryBuilder.h">
+      <Filter>Models\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Models\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Utilities\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameModel.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MobileBody.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShip.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sun.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Planet.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderTypes.h">
+      <Filter>VFX\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IShape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollingImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FuelBuff.h">
+      <Filter>GameObjects\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\FX\PSSun.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSDissolve.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSParticle.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSOutline.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSSun.hlsl">
+      <Filter>VFX\Shaders\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSDefault.hlsl">
+      <Filter>VFX\Shaders\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSOutline.hlsl">
+      <Filter>VFX\Shaders\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSParticle.hlsl">
+      <Filter>VFX\Shaders\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\DSSun.hlsl">
+      <Filter>VFX\Shaders\Domain</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\HSSun.hlsl">
+      <Filter>VFX\Shaders\Hull</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSDefault.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSLitTex.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSTexDissolve.hlsl">
+      <Filter>VFX\Shaders\Pixel</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\FX\Constants.hlsli">
+      <Filter>VFX\Shaders\Utilities</Filter>
+    </None>
+    <None Include="..\FX\LightHelper.hlsli">
+      <Filter>VFX\Shaders\Utilities</Filter>
+    </None>
+    <None Include="..\FX\Fresnel.hlsli">
+      <Filter>VFX\Shaders\Utilities</Filter>
+    </None>
+    <None Include="..\FX\Surface.hlsli">
+      <Filter>VFX\Shaders\Utilities</Filter>
+    </None>
+    <None Include="..\FX\Noise.hlsli">
+      <Filter>VFX\Shaders\Utilities</Filter>
+    </None>
+  </ItemGroup>
+</Project>

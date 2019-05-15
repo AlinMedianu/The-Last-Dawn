@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3B773CC3-AB63-4D30-AF00-9C418AC85982}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SetupD3D</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TheLastDawn</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\assimp-3.3.1\include\assimp;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(LibraryPath);..\..\..\assimp-3.3.1\bin_vs2015\code\Debug;..\..\..\DirectXTK\Bin\Desktop_2015\Win32\Debug</LibraryPath>
+    <OutDir>../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/wd4005 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalIncludeDirectories>..\..\..\DirectXTK\Inc;;..\..\..\fmod\inc</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>directxtk.lib;Xinput9_1_0.lib;assimp-vc140-mt.lib;d3d11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;fmodex_vc.lib</AdditionalDependencies>
+      <OutputFile>..\bin\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\fmod\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\DirectXTK;;..\..\..\fmod\inc</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);fmodex_vc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\fmod\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioMgr.cpp" />
+    <ClCompile Include="AudioMgrFMOD.cpp" />
+    <ClCompile Include="Cipher.cpp" />
+    <ClCompile Include="Emitter.cpp" />
+    <ClCompile Include="FuelBuff.cpp" />
+    <ClCompile Include="GameCamera.cpp" />
+    <ClCompile Include="GameModeAudio.cpp" />
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="HighScoreManager.cpp" />
+    <ClCompile Include="HighScoreUI.cpp" />
+    <ClCompile Include="IModeAudio.cpp" />
+    <ClCompile Include="ISerializable.cpp" />
+    <ClCompile Include="LoadSaveManager.cpp" />
+    <ClCompile Include="Modes\GameOverMode.cpp" />
+    <ClCompile Include="Modes\HighScoreMode.cpp" />
+    <ClCompile Include="Modes\NameEntryMode.cpp" />
+    <ClCompile Include="NameEntryModeAudio.cpp" />
+    <ClCompile Include="NameEntryUI.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="ScrollingImage.cpp" />
+    <ClCompile Include="CRC.cpp" />
+    <ClCompile Include="D3D.cpp" />
+    <ClCompile Include="D3DUtil.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="FX.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GeometryBuilder.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="MobileBody.cpp" />
+    <ClCompile Include="GameModel.cpp" />
+    <ClCompile Include="Modes\GameMode.cpp" />
+    <ClCompile Include="Modes\Mode.cpp" />
+    <ClCompile Include="Modes\ModeManager.cpp" />
+    <ClCompile Include="Modes\TitleMode.cpp" />
+    <ClCompile Include="ParticleSys.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="PlayerShip.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="ShaderTypes.cpp" />
+    <ClCompile Include="ShipAudio.cpp" />
+    <ClCompile Include="Sun.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TitleModeAudio.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="UtilsDefines.cpp" />
+    <ClCompile Include="WindowUtils.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioMgr.h" />
+    <ClInclude Include="AudioMgrFMOD.h" />
+    <ClInclude Include="Cipher.h" />
+    <ClInclude Include="Emitter.h" />
+    <ClInclude Include="FuelBuff.h" />
+    <ClInclude Include="GameCamera.h" />
+    <ClInclude Include="GameModeAudio.h" />
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="HighScoreManager.h" />
+    <ClInclude Include="HighScoreUI.h" />
+    <ClInclude Include="IAudioGroup.h" />
+    <ClInclude Include="IModeAudio.h" />
+    <ClInclude Include="ISerializable.h" />
+    <ClInclude Include="IShape.h" />
+    <ClInclude Include="LoadSaveManager.h" />
+    <ClInclude Include="Modes\GameOverMode.h" />
+    <ClInclude Include="Modes\HighScoreMode.h" />
+    <ClInclude Include="Modes\NameEntryMode.h" />
+    <ClInclude Include="NameEntryModeAudio.h" />
+    <ClInclude Include="NameEntryUI.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="Score.h" />
+    <ClInclude Include="ScrollingImage.h" />
+    <ClInclude Include="CRC.h" />
+    <ClInclude Include="D3D.h" />
+    <ClInclude Include="D3DUtil.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="FX.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GeometryBuilder.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MobileBody.h" />
+    <ClInclude Include="GameModel.h" />
+    <ClInclude Include="Modes\GameMode.h" />
+    <ClInclude Include="Modes\Mode.h" />
+    <ClInclude Include="Modes\ModeManager.h" />
+    <ClInclude Include="Modes\TitleMode.h" />
+    <ClInclude Include="ParticleSys.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="PlayerShip.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Rect.h" />
+    <ClInclude Include="ShaderTypes.h" />
+    <ClInclude Include="ShipAudio.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Spawner.h" />
+    <ClInclude Include="Sun.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TitleModeAudio.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="UtilsDefines.h" />
+    <ClInclude Include="WindowUtils.h" />
+    <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\FX\DSSun.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Domain</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Domain</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">domain</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\HSSun.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Hull</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Hull</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hull</EntryPointName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSDefault.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSLitTex.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSSun.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSTexDissolve.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSParticle.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vertex</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSDissolve.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSParticle.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\PSOutline.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pixel</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSDefault.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vertex</EntryPointName>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSOutline.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vertex</EntryPointName>
+    </FxCompile>
+    <FxCompile Include="..\FX\VSSun.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\data\%(Filename).cso</ObjectFileOutput>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">vertex</EntryPointName>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\FX\Constants.hlsli" />
+    <None Include="..\FX\Fresnel.hlsli" />
+    <None Include="..\FX\LightHelper.hlsli" />
+    <None Include="..\FX\Noise.hlsli" />
+    <None Include="..\FX\Surface.hlsli" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
